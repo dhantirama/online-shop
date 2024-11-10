@@ -1,0 +1,185 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #474F7A;
+  font-family: "Playfair Display", serif;
+}
+  .buku{
+  width: 250px;
+  height:360px;
+  border:1px solid #474F7A;
+}
+#banner{
+  background: #144272;
+  margin-left: auto;
+  
+}
+.clear{
+  clear: both;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul#nav {
+  margin-top: 10px;
+}
+ul#nav li{
+  background:#474F7A;float: left;color:#fff;
+}
+ul#nav li a{
+  display: block;padding: 5px 10px;color: #fff;
+}
+ul#nav li a:hover{ 
+  background: rgba(0,0,0,0.3);
+
+}
+ul#nav li ul li{
+  float: none;
+
+}
+ul#nav li ul{
+  position: absolute;display: none;
+}
+ul#nav li:hover ul{
+  display: block;
+}
+
+.about {
+background-size: cover;
+position: relative;
+padding: 50px 0;
+background-color: #FFD0EC;
+
+}
+
+.about:before {
+content: "";
+background: #81689D;
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+.about .about-img {
+position: relative;
+transition: 0.5s;
+}
+
+.about .about-img img {
+max-width: 100%;
+border: 4px solid rgba(255, 255, 255, 0.2);
+position: relative;
+}
+
+.about .about-img::before {
+position: absolute;
+left: 20px;
+top: 20px;
+width: 60px;
+height: 60px;
+z-index: 1;
+content: "";
+border-left: 5px solid #cda45e;
+border-top: 5px solid #cda45e;
+transition: 0.5s;
+}
+
+.about .about-img::after {
+position: absolute;
+right: 20px;
+bottom: 20px;
+width: 60px;
+height: 60px;
+z-index: 2;
+content: "";
+border-right: 5px solid #cda45e;
+border-bottom: 5px solid #cda45e;
+transition: 0.5s;
+}
+
+.about .about-img:hover {
+transform: scale(1.03);
+}
+
+.about .about-img:hover::before {
+left: 10px;
+top: 10px;
+}
+
+.about .about-img:hover::after {
+right: 10px;
+bottom: 10px;
+}
+
+.about .content {
+position: relative;
+color: #FFD0EC;
+}
+
+.about .content h3 {
+font-weight: 100;
+font-size: 60px;
+color: #FFD0EC;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about .content p {
+margin-bottom: 0;
+font-size: 20px;
+color: #FFD0EC;
+}
+
+@media (min-width: 1000px) {
+.about {
+  background-attachment: fixed;
+}
+}
+.review .box {
+padding: 50px 30px;
+box-shadow: 0px 2px 15px rgba(54, 38, 38, 0.5);
+transition: all ease-in-out 0.3s;
+background: #81689D;
+margin-bottom: 20px;
+}
+
+.review .box span {
+display: block;
+font-size: 28px;
+font-weight: 700;
+color: #cda45e;
+}
+
+.review .box h4 {
+font-size: 24px;
+font-weight: 600;
+padding: 0;
+margin: 20px 20px;
+color: rgba(255, 255, 255, 0.8);
+}
+
+.review .box p {
+color: #aaaaaa;
+font-size: 15px;
+margin: 0;
+padding: 0;
+}
+
+.review .box:hover {
+background: #cda45e;
+padding: 30px 30px 70px 30px;
+box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.review .box:hover span,
+.review .box:hover h4,
+.review .box:hover p {
+color: #FFD0EC;
+}
+.btn-danger{
+  background: #9B4444;
+}
+            
